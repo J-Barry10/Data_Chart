@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DATA ASSIGNMENT 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="bigbox"> <!-- My entire text will sit inside a large page-size div so that I can have more control over the flex boxes inside to make everything clearer. -->
+	<div class="container"> <!-- A separate flexible div box is used for each block of text. -->
+<h1>NYC's Poorest Students Most Affected by Absenteeism</h1>
+	</div>
+		<p><div class="image">
+			<figure>
+				<img src="images/classroom.jpg" id="classroom" alt="An image of an empty classroom"></p>
+			<p><figcaption>
+				According to a Sep 2024 report, nearly 35% of NYC students are listed as 'chronically absent'. (Image: Creative Commons public domain)
+			</figcaption></p>
+			</figure>
+	</div>
+<!-- I put this into a separate fig box because I wanted it to be separated and centered on the page while I wanted the rest of the text to be set left. I actually wanted the caption to be left aligned with the figure, but I couldn't figre out how to do it without screwing up the formatting, so I left it centered beneath the image -->
+
+
+<h6>By: Jarrod Barry</h6>
+<h6>Nov. 17</h6>
+
+<div class="container">
+<div class="text"> <!-- I've put each paragraph into it's own div boxes. I created flex boxes so that they can move a bit more freely when switching between desktop and mobile set-ups. -->
+<p>More than 4 years after the COVID-19 pandemic disrupted schools across the country, students are still struggling with the aftereffects. Amidst <a href="https://www.nytimes.com/2023/06/21/us/naep-test-results-education.html">reports of some of the lowest test scores in decades</a> and <a href="https://www.pewresearch.org/short-reads/2024/06/12/72-percent-of-us-high-school-teachers-say-cellphone-distraction-is-a-major-problem-in-the-classroom/">concerns about the ever-present distraction of smartphones</a>, schools nationwide are also battling stubbornly high rates of chronic absenteeism.</p>
+	</div>
+</div>
+
+<div class="container">
+<div class="text"> <!-- To be honest, I'm not completely sure if I need to put each paragraph in its own separate div box. However, I was worried that not doing so might screw up the formating, especially when I switch to the slightly different div box used for the charts. To be safe, I just did this, though maybe it was too much extra work? -->
+<p>Ever since the coronavirus-induced lockdowns that took place during the 2019-20 and 2020-21 school years, schools across the country have struggled to keep students in the classroom. The issue was highlighted in a <a href="https://www.osc.ny.gov/files/reports/pdf/missing-school-ny-chronic-absenteeism.pdf?utm_medium=email&utm_source=govdelivery"> <!-- I've put an external link here so that the viewer can see where I'm getting my information from. -->report last month from the New York state comptroller</a>. The report found that in the 2022-23 school year, nearly a third of students in New York state were “chronically absent”, a term defined as missing 10 percent or more of the school year (typically 18 days in a 180-day year). In New York City specifically, the rate is slightly higher, at around 35%, according to the <a href="https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/2024_mmr.pdf">September Mayor’s Management Report</a>.</p>
+	</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>Even within New York City, though, absenteeism can vary widely among the city’s 32 districts. The chart below shows how wide the discrepancy can be:</p>
+</div>
+</div>
+
+<div class="chart">
+<iframe title="New York City districts with highest and lowest rates of chronically absent students (2022-23)" aria-label="Column Chart" id="datawrapper-chart-bZIzl" src="https://datawrapper.dwcdn.net/bZIzl/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="610" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</div>
+
+<!-- I set the chart inside a separate div box so that I could add some padding around it for the mobile version. Without it, the chart would push up against the edge of the screen in the mobile version and would be very difficult to read. -->
+
+<div class="container">
+<div class="text">
+<p>As the chart shows, absenteeism is not evenly spread across the city. For instance, the district with the highest rate – mostly encompassing schools in central Harlem and Morningside Heights –  had more than double the chronic absenteeism rate of the district comprising Little Neck and Bayside, the district with the lowest rate. This is emblematic of the gulf that exists within New York City’s schools.</p>
+</div>
+</div>
+
+
+<div class="container">
+<div class="text">
+<p>For Dr. Anthony Picciano, a professor in education at Hunter College, the results are not surprising. “While the numbers are higher in New York City, in general, absenteeism is always higher in large urban areas with substantially poor, minority, and immigrant populations,” he said. “The reasons for this are complex but relate to larger societal and family issues.”</p>
+</div>
+</div>
+
+
+<div class="container">
+<div class="text">
+<p>Many of the districts with the highest absenteeism rates also have higher levels of poverty. For example, the district with the 2nd-highest absenteeism rates includes the neighborhoods of Bedford Stuyvesant and Weeksville, areas which have poverty rates north of 21%, higher than the city average. Two of the other top-five districts are in the Bronx in areas that have poverty rates over 30%, some of the highest in the city.</p>
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>Looking at the city as a whole, there’s a moderate correlation between the percentage of impoverished students in a district and its chronic absenteeism rate:</p>
+</div>
+</div>
+
+<div class="chart">
+<iframe title="Correlation between chronic absenteeism and poverty" aria-label="Scatter Plot" id="datawrapper-chart-Ww3By" src="https://datawrapper.dwcdn.net/Ww3By/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</div>
+
+<!-- Same with this. I set this in a div box so that I could add the padding to make it clearer for the mobile version. -->
+
+<div class="container">
+<div class="text">
+<p>In their analysis of Department of Education data, <a href="https://www.chalkbeat.org/newyork/2024/09/23/nyc-schools-curb-chronic-absenteeism/">Chalkbeat</a> found that schools with higher percentages of impoverished students faced higher chronic absenteeism rates both before and since the pandemic. According to Picciano, this tracks with what he’s seen over the years.</p>
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>“The rushed deployment of remote learning was problematic to say the least," he said. "It was most problematic for poor and minority students who had little or no wifi access and felt disconnected from their educations.”</p>
+</div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
